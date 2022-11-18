@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Kanit:wght@50">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vridhi Pages</title>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';
+* {font-family: 'Open Sans', sans-serif;}
+
+.rwd-table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: #428bca;
+  color: #fff;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+.container {
+  display: block;
+  text-align: center;
+}
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
+}
+:root {
+    background-color: rgba(0, 0, 21, 1);
+    
+}
+.header{
+}
+.heeder-large-screen{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    color:cyan;
+    font-family:"Kanit",sans-serif;
+    font-size: 20px !important;
+
+
+}
+#navDemo{
+    background-color: #000015;
+    
+}
+#navDemo a{
+    font-size: 13px !important;
+    font-family: "Audiowide", sans-serif;
+    color:cyan;
+}
+
+.hero{
+    height: 650px;
+    background-image: url("https://source.unsplash.com/HVYepJYeHdQ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: #000015; 
+
+    
+}
+.hero-description{
+    height: 650px;
+    background-color: rgba(0, 0, 21, .7);
+    display: flex;
+}
+.hero-text{
+    width:70% !important;
+    margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.hero-text p{
+    color:white;
+    width: 50%;
+}
+.hero-title{
+     /* padding-top:80px; */
+     font-weight: 800;
+    text-transform: uppercase;
+    font-size: 80px;
+    color:orange;
+    
+    text-align: center;
+
+}
+.social{
+    width:100%;
+}
+.icons{
+    font-size: 20px;
+    letter-spacing: 5px;
+
+}
+main{
+    width:80% !important;
+    margin: auto !important;
+}
+.title{
+    color:white;
+    font-weight: 600;
+    font-size: 40px;;
+    margin:50px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+.game-logo img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+h3{
+    color:white;
+    text-align: center;
+}
+
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color:	rgba(0, 0, 47,0.3); */
+    justify-content: space-evenly;
+}
+.game-list{
+    margin: 30px;;
+    padding: 20px;
+    height: 200px;
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid gray;
+    background: rgba(255, 75, 255, 0.1);
+    box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.game-list:hover{
+    transform: scale(1.05);
+}
+.store{
+    margin-top: 50px;
+}
+.game-store{
+    margin-top: 20px !important;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.game-image{
+    width:300px;
+    height: 180px;
+    
+}
+.game-image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.game-store-list{
+    width:300px;
+    height: 300px;
+     margin: 20px;
+    overflow: hidden;
+    border-top: none;
+    
+      -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+              box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom: 1px solid blueviolet;
+    color:white;
+     
+}
+.store-text-description{
+     
+padding-left:20px;
+display: flex;
+flex-direction: column;
+     
+} 
+h4{
+    color:white;
+    font-weight: 700;
+}
+.event-hero{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 75, 255, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+    padding:50px;
+    margin-top: 50px;
+    border:1px solid black;
+    border-radius: 10px;
+    
+}
+.event-text{
+    width:50%;
+    color: orange;
+
+}
+.event-title{
+    font-size: 40px;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    
+
+}
+.event-image{
+    width:400px;
+    height: 500px;
+}
+.event-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.event-text p{
+    color: white;
+}
+.contact{
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact-list{
+    margin-top: 15px !important;
+    color: white;
+}
+h5{
+    color:white;
+}
+span{
+    padding-right: 10px;
+}
+.contact-list p{
+}
+.email-contact{
+    width:80%;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+/*General CSS and CSS reset*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.active1 {
+text-decoration:underline;
+}
+
+@media screen and (max-width: 1500px) {
+    .hero{
+        height: 550px !important;;
+        background-image: url("https://source.unsplash.com/HVYepJYeHdQ/1200x600");
+    }
+    .hero-description{
+        height: 550px
+    }
+    .hero-title{
+        font-size:50px;
+    }
+    .active {
+background-color:cyan;
+color:black;
+}
+}
+
+/*medium screens - Laptops*/
+@media screen and (max-width: 1024px) {
+    main{
+        width:100% !important;
+        margin: auto !important;
+    }    
+    
+}
+
+/*Small screens - tablets*/
+@media screen and (max-width: 768px) {
+    .heeder-large-screen{
+        display:block !important;
+    }
+    header a{
+        font-size: 14px;
+    }
+    .hero{
+        height: 400px !important;
+        background-image: url("https://source.unsplash.com/HVYepJYeHdQ/480x300");
+    }
+    .hero-description{
+        height: 400px;
+        background-color: rgba(0, 0, 21, .7);
+        
+    
+    }
+    .hero-title{
+        font-size: 35px;;
+        
+    }
+    .hero-text p{
+        width: 80%;;
+        font-size: 13px;
+      
+    }
+    .title{
+        text-align: center;
+        font-size: 30px;
+    }
+    .event-text{
+        width:80%;
+        color: blueviolet;
+
+    }
+    .event-text p{
+        font-size: 13px;
+    }
+    .event-title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    
+
+    }
+    .event-hero{
+        width: 80% ;
+        margin: auto;
+    }
+    .event-image{
+        width:250px;
+        height: 400px;
+    }
+    .event-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact-list{
+        width: 300px;
+    }
+    .contact{
+        justify-content: space-around;
+    }
+    .contact-list p{
+        font-size: 14px ;
+
+    }
+    h5{
+        font-size: 17px;
+    }
+    
+    
+}
+
+/*Extra small screens - phones*/
+@media screen and (max-width: 480px) {
+    .heeder-large-screen{
+        display:block !important;
+    }
+    .hero{
+        height: 450px !important;
+        background-image: url("https://source.unsplash.com/HVYepJYeHdQ/480x300");
+    }
+    .hero-description{
+        height: 450px;
+        background-color: rgba(0, 0, 21, .7);
+    
+    }
+    .hero-title{
+        font-size: 30px;;
+        padding-top: 70px;
+    }
+    .hero-text p{
+        width: 100%;;
+        font-size: 11px;
+    }
+    .title{
+        text-align: center;
+        font-size: 25px;
+    }
+    .event-text{
+        width:100%;
+        color: blueviolet;
+
+    }
+    .event-text p{
+        font-size: 13px;
+    }
+    .event-title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    
+
+    }
+    .event-hero{
+        width: 90% ;
+        margin: auto;
+    }
+    .event-image{
+        width:250px;
+        height: 400px;
+    }
+    .event-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact-list{
+        width: 300px;
+        padding:25px;
+        border:1px solid rgba(49, 45, 45, 0.5);
+        border-radius: 10px;
+    }
+    .contact-list p{
+        font-size: 12px ;
+
+    }
+    h5{
+        font-size: 15px;
+    }
+    .badge{
+
+    }
+    p{
+        font-size: 12px;
+    }
+    
+}
+</style>
+</head>
+<body>
+  <header style="position: relative;">
+
+    <div class="w3-top" class="header" id="home">
+      <div class="w3-bar  w3-card w3-left-align w3-large heeder-large-screen" style="background-color: #000015;" >
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-black w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large  w3-hover-black">Vridhi Pages</a>
+        <div >
+          <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" >Home</a>
+          <a href="t1.html" class="active w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Tests</a>
+          <a href="rpage1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Results</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Contact</a>
+        </div>
+    
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">Home</a>
+        <a href="t1.html" class="active1 w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tests</a>
+        <a href="rpage1.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Results</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+      </div>
+    </div>
+  </header>
+    <div class="store" id="tests">
+        <h2 class="hero-title">Free Test Series</h2>
+      <div class="container">
+  <table class="rwd-table">
+    <tbody>
+      <tr>
+        <th>Date</th>
+        <th>Test Name</th>
+        <th>Test Link</th>
+        <th>Total Marks</th>
+      </tr>
+      <tr>
+        <td data-th="Date">
+          19/11/2022
+        </td>
+        <td data-th="Test Name">
+          Jee Mains 2022
+        </td>
+        <td data-th="Test Link">
+          
+        </td>
+        <td data-th="Total Marks">
+          300
+        </td>
+      </tr>
+      <tr>
+        <td data-th="Date">
+          19/11/2022
+        </td>
+        <td data-th="Test Name">
+          Jee Mains 2022
+        </td>
+        <td data-th="Test Link">
+          
+        </td>
+        <td data-th="Total Marks">
+          300
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
+    </div>
+            <div>
+      <h2 class="hero-title">Reach out to us</h2>
+      <div class="contact" id="contact" style="padding-bottom: 10px !important;">
+      <div class="contact-list contact-address"  >
+        <h5><span><i class="fa fa-book w3-xlarge w3-text-light-grey"></i></span>Books</h5>
+        <p>Follow these books <br>
+        NCERT Books </br>
+        NCERT Exempler </br>
+        Previous Year Papers (PYQ) </br>
+        </p>
+      </div>
+      <div class="contact-list">
+        <h5><span><i class="fa fa-envelope w3-xlarge w3-text-light-grey"></i></span>Send an email</h5>
+        <div class="email-contact">
+          <input placeholder="vivoY75user@gmail.com"  type="email" disabled style="margin: 8px 0px;padding:2px; width:200px; !important;"/>
+          </div>
+  
+      </div>
+      <div class="contact-list" >
+        <h5><span><i class="fa fa-telegram w3-xlarge w3-text-light-grey"></i></span>Telegram</h5>
+        <p>Personal:<a href="https://t.me/vridhi_pages">Vridhi_Pages</a></p>
+        <p>Channel:<a href="https://t.me/jee_2023_test_series">Official Group</a></p>
+
+      </div>
+
+      </div>
+    </div>
+        
+      </main>
+      
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+        </script>
+    <script async="async" data-cfasync="false" src="//pl17945212.highperformancecpmgate.com/fb89cd916816b85c576e895279608d82/invoke.js"></script>
+<div id="container-fb89cd916816b85c576e895279608d82"></div>
+<a style="color:cyan;"href="https://www.highperformancecpmgate.com/fdw98nubwi?key=b0dcbdc09f1a8d8e835a7f8a8b821e08">Get free books(Not hosted by vridhi pages)</a>
+</body>
+</html>
