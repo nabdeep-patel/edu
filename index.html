@@ -1,563 +1,810 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en' class=''>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Kanit:wght@50 |Permanent Marker">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Vridhi Pages</title>
-<style>
-:root {
-    background-color: rgba(0, 0, 21, 1);
+
+  <meta charset='UTF-8'>
+  <meta name="robots" content="noindex">
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/vridhi-pages/pen/oNMQRrb?editors=1000">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+
+  <style id="INLINE_PEN_STYLESHEET_ID">
     
-}
-.header{
-}
-.heeder-large-screen{
-    display: flex !important;
-    justify-content: space-evenly !important;
-    color:cyan;
-    font-family:"Kanit",sans-serif;
-    font-size: 20px !important;
+  </style>
 
-
+  
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Vridhi-Pages</title> 
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                           
+  <style>
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jost&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap');
+body {
+  background: linear-gradient(to right,#045fc7,#044cc7,#0424c7,#0414c7);
+    margin-top:65px;}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  box-sizing: inherit;
 }
-#navDemo{
-    background-color: #000015;
-    
-}
-#navDemo a{
-    font-size: 13px !important;
-    font-family: "Audiowide", sans-serif;
-    color:cyan;
-}
-
-.hero{
-    height: 650px;
-    background-image: url("https://source.unsplash.com/HVYepJYeHdQ");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    background-color: #000015; 
-
-    
-}
-.hero-description{
-    height: 650px;
-    background-color: rgba(0, 0, 21, .7);
-    display: flex;
-}
-.hero-text{
-    width:70% !important;
-    margin: auto !important;
-    display: flex;
-    flex-wrap: wrap;
-    
+.myimg { display:block;}
+    .myimg1{display:none;}
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
 }
 
-
-.hero-text p{
-    color:white;
-    width: 50%;
-}
-.hero-title{
-     /* padding-top:80px; */
-     font-weight: 800;
-    text-transform: uppercase;
-    font-size: 80px;
-    color:orange;
-    
-    text-align: center;
-
-}
-.social{
-    width:100%;
-}
-.icons{
-    font-size: 20px;
-    letter-spacing: 5px;
-
-}
-main{
-    width:80% !important;
-    margin: auto !important;
-}
-.title{
-    color:white;
-    font-weight: 600;
-    font-size: 40px;;
-    margin:50px 0px;
-    text-align: center;
-    text-transform: uppercase;
-    
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
 }
 
-
-.game-logo img{
-    width:100%;
-    height: 100%;
-    object-fit: contain;
-}
-h3{
-    color:white;
-    text-align: center;
-}
-
-.games{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    /* background-color:	rgba(0, 0, 47,0.3); */
-    justify-content: space-evenly;
-}
-.game-list{
-    margin: 30px;;
-    padding: 20px;
-    height: 200px;
-    width:250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border:1px solid gray;
-    background: rgba(255, 75, 255, 0.1);
-    box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-.game-list:hover{
-    transform: scale(1.05);
-}
-.store{
-    margin-top: 50px;
-}
-.game-store{
-    margin-top: 20px !important;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-}
-.game-image{
-    width:300px;
-    height: 180px;
-    
-}
-.game-image img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-}
-.game-store-list{
-    width:300px;
-    height: 300px;
-     margin: 20px;
-    overflow: hidden;
-    border-top: none;
-    
-      -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
-              box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-bottom: 1px solid blueviolet;
-    color:white;
-     
-}
-.store-text-description{
-     
-padding-left:20px;
-display: flex;
-flex-direction: column;
-     
-} 
-h4{
-    color:white;
-    font-weight: 700;
-}
-.event-hero{
-    display: flex;
-    flex-wrap: wrap;
-    background: rgba(255, 75, 255, 0.1);
-    justify-content: space-evenly;
-    align-items: center;
-    padding:50px;
-    margin-top: 50px;
-    border:1px solid black;
-    border-radius: 10px;
-    
-}
-.event-text{
-    width:50%;
-    color: orange;
-
-}
-.event-title{
-    font-size: 40px;
-    text-transform: uppercase;
-
-    font-weight: 600;
-    
-
-}
-.event-image{
-    width:400px;
-    height: 500px;
-}
-.event-image img{
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+  opacity: 80.95%;
+    position: fixed;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-.event-text p{
+    background: #060761;
     color: white;
+    opacity: 0.85;
+    top:0;
+    z-index: 100;
+  font-family: 'Jost', sans-serif;
+font-family: 'Permanent Marker', cursive;
 }
-.contact{
-    
-    
+
+.navbar-container{
+  
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
 }
-.contact-list{
-    margin-top: 15px !important;
-    color: white;
-}
-h5{
-    color:white;
-}
-span{
-    padding-right: 10px;
-}
-.contact-list p{
-}
-.email-contact{
-    width:80%;
-    color: gray;
+
+.menu-items{
+    order: 2;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+  font-family: arial;
 }
 
-
-
-
-
-
-/*General CSS and CSS reset*/
-
-html {
-  scroll-behavior: smooth;
+.menu-items li{
+    list-style: none;
+  text-align: center;
+    font-size: 1.3rem;
+  padding-left: 6px;
+  padding-right:4px;
+  
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-.active1 {
-text-decoration:underline;
-}
-
-
-@media screen and (max-width: 1500px) {
-    .hero{
-        height: 550px !important;;
-        background-image: url("https://source.unsplash.com/HVYepJYeHdQ/1200x600");
-    }
-    .hero-description{
-        height: 550px
-    }
-    .hero-title{
-        font-size:50px;
-    }
-    .active {
-background-color:cyan;
-color:black;
-
+.navbar a{
+    color: cyan;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
-/*medium screens - Laptops*/
-@media screen and (max-width: 1024px) {
-    main{
-        width:100% !important;
-        margin: auto !important;
-    }
-    .active {
-background-color:cyan;
-color:black;
+.navbar a:hover{
+    color: #060761;
+    text-shadow: -4px 2px cyan;
 }
-   
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+  border-radius: 3px;
 }
 
-/*Small screens - tablets*/
-@media screen and (max-width: 768px) {
-    .heeder-large-screen{
-        display:block !important;
-    }
-    header a{
-        font-size: 14px;
-    }
-    .hero{
-        height: 400px !important;
-        background-image: url("https://source.unsplash.com/HVYepJYeHdQ/480x300");
-    }
-    .hero-description{
-        height: 400px;
-        background-color: rgba(0, 0, 21, .7);
-        
+.btn::before {
+  content: "";
+  opacity: 0;
+  transform-origin: center center;
+  transform: scale3d(0.9, 0.65, 0.8);
+  transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 3px;
+  background-color: cyan;
+  color: #060761;
+  z-index: -1;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  color: white;
+  border-color: transparent;
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+@media (max-width: 900px){
     
-    }
-    .hero-title{
-        font-size: 35px;;
-        
-    }
-    .hero-text p{
-        width: 80%;;
-        font-size: 13px;
+    .navbar{
+        opacity: 0.95;
       
     }
-    .title{
-        text-align: center;
-        font-size: 30px;
-    }
-    .event-text{
-        width:80%;
-        color: blueviolet;
 
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
     }
-    .event-text p{
-        font-size: 13px;
-    }
-    .event-title{
-        font-size: 30px;
-        text-transform: uppercase;
-        font-weight: 600;
-    
 
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
     }
-    .event-hero{
-        width: 80% ;
-        margin: auto;
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
     }
-    .event-image{
-        width:250px;
-        height: 400px;
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .event-image img{
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .contact-list{
-        width: 300px;
-    }
-    .contact{
-        justify-content: space-around;
-    }
-    .contact-list p{
-        font-size: 14px ;
-
-    }
-    h5{
-        font-size: 17px;
-    }
-    
-}
-
-/*Extra small screens - phones*/
-@media screen and (max-width: 480px) {
-    .heeder-large-screen{
-        display:block !important;
-    }
-    .hero{
-        height: 450px !important;
-        background-image: url("https://source.unsplash.com/HVYepJYeHdQ/480x300");
-    }
-    .hero-description{
-        height: 450px;
-        background-color: rgba(0, 0, 21, .7);
-    
-    }
-    .hero-title{
-        font-size: 30px;;
-        padding-top: 70px;
-    }
-    .hero-text p{
-        width: 100%;;
-        font-size: 11px;
-    }
-    .title{
-        text-align: center;
-        font-size: 25px;
-    }
-    .event-text{
-        width:100%;
-        color: blueviolet;
-
-    }
-    .event-text p{
-        font-size: 13px;
-    }
-    .event-title{
-        font-size: 30px;
-        text-transform: uppercase;
-        font-weight: 600;
-    
-
-    }
-    .event-hero{
-        width: 90% ;
-        margin: auto;
-    }
-    .event-image{
-        width:250px;
-        height: 400px;
-    }
-    .event-image img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .contact-list{
-        width: 300px;
-        padding:25px;
-        border:1px solid rgba(49, 45, 45, 0.5);
         border-radius: 10px;
-    }
-    .contact-list p{
-        font-size: 12px ;
-
-    }
-    h5{
-        font-size: 15px;
-    }
-    .badge{
-
-    }
-    p{
-        font-size: 12px;
+        background: white;
     }
     
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: -19% 150%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-right:40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+      background-color: #07071f;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 2.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.2rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+.navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+  transform: scaleY(0);}
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
 }
-</style>
+    .dashboard {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.12);
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.section {
+  margin: 30px 0;
+}
+
+/* =====Section Left======= */
+
+.section-left {
+  flex: 1;
+  padding: 15px;
+}
+.nfts {
+  padding: 0 8px;
+  margin: 25px 0;
+}
+
+.categories {
+  margin: 20px 0;
+}
+
+.category {
+  background: #fff;
+  padding: 6px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #161622;
+  transition: 0.3s linear;
+}
+/* =====Browse NFTs======= */
+
+.browse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nft {
+  background: #fff;
+  padding: 10px 20px 20px 20px;
+  border-radius: 25px;
+  transition: 0.4s linear;
+  margin: 10px 5px;
+}
+
+.nft img {
+  width: 100%;
+  height: 240px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.author {
+  font-size: 14px;
+}
+
+.price {
+  background: rgba(124, 248, 136, 0.346);
+  padding: 12px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #38c947;
+  font-weight: 600;
+}
+
+@media (max-width: 10590px) {
+  .dashboard-content {
+    padding: 0;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+ 
+@media (max-width: 640px) {
+  .browse {
+    grid-template-columns: 1fr;
+  }
+
+  .section-left{
+    padding: 0;
+  }
+
+  .nft {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 380px) {
+   .categories {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 300px) {
+   .price {
+    text-align: center;
+    padding: 5px;
+  }
+}
+h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {}
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 60px 0;
+           /* min-height: 100vh;*/
+        }
+.footer {
+    background: #060761;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+/*END FOOTER SOCIAL DESIGN*/
+.single_footer{}
+@media only screen and (max-width:768px) { 
+.single_footer{margin-bottom:30px;}
+}
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+}
+.single_footer p{color:#fff;}
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single_footer ul li{}
+.single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.single_footer ul li a:hover { color: #ff3666; }
+
+.single_footer_address{}
+.single_footer_address ul{}
+.single_footer_address ul li{color:#fff;}
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*START NEWSLETTER CSS*/
+.subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+.subscribe__input {
+background-color: #fff;
+border: medium none;
+border-radius: 5px;
+color: #333;
+display: block;
+font-size: 15px;
+font-weight: 500;
+height: 60px;
+letter-spacing: 0.4px;
+margin: 0;
+padding: 0 150px 0 20px;
+text-align: center;
+text-transform: capitalize;
+width: 100%;
+}
+@media only screen and (max-width:768px) { 
+.subscribe__input{padding: 0 50px 0 20px;}
+}
+
+.subscribe__btn {
+background-color: transparent;
+border-radius: 0 25px 25px 0;
+color: #01c7e9;
+cursor: pointer;
+display: block;
+font-size: 20px;
+height: 60px;
+position: absolute;
+right: 0;
+top: 0;
+width: 60px;
+}
+.subscribe__btn i{transition: all 0.3s ease 0s;}
+@media only screen and (max-width:768px) { 
+.subscribe__btn{right:0px;}
+}
+
+.subscribe__btn:hover i{
+    color:#ff3666;
+}
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+/*END NEWSLETTER CSS*/
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {margin-top:40px;}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.social_profile ul li{float:left;}
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+@media only screen and (max-width:768px) { 
+.social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a{
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+}
+  .social_profile ul li a.facebook:hover{
+background-color:#3b5998;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.youtube:hover{
+background-color:#FF0000; 
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+ .social_profile ul li a.instagram:hover{
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.telegram:hover{
+background-color:#0088cc;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.twitter:hover{
+background-color:#00aced;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+  .social_profile ul li a.whatsapp:hover{
+background-color:#4fce5d;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+/*END SOCIAL PROFILE CSS*/
+.copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color:#fff;
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    text-align: center;
+}
+.copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
+.copyright a:hover{color:#ff3666;}
+  </style>
+    <title>Physical Science</title>
 </head>
 <body>
-  <header style="position: relative;">
-
-    <div class="w3-top" class="header" id="home">
-      <div class="w3-bar  w3-card w3-left-align w3-large heeder-large-screen" style="background-color: #000015;" >
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-black w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#home" class="w3-bar-item w3-button w3-padding-large  w3-hover-black">Vridhi Pages</a>
-        <div >
-          <a href="index.html" class="active w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" >Home</a>
-          <a href="t1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Tests</a>
-          <a href="rpage1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Results</a>
-          <a href="sign.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Sign In</a>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items" style="color: #f4fc03;">
+                <li><a href="#" class="btn">Home</a></li>
+                <li><a href="#" class="btn">Category</a></li>
+              <li><a href="#" class="btn">Contact</a></li>
+              <li><a style="border: 2px solid cyan;" href="#" class="btn">Sign In</a></li>
+            </ul>
+            <h1 class="logo"><a style="font-family: 'Atomic Age', cursive; margin-bottom:auto;margin-top:auto;" href="https://www.vridhi-pages.cf">Vridhi-Pages</a></h1>
         </div>
-    
-      </div>
+    </nav>
+<div class="myimg"><img src="https://www.vridhi-pages.cf/banner.jpg" width="100%" height="50%"></img></div>
+<div class="myimg1"><img src="https://thumbs.dreamstime.com/b/physics-school-subject-typographic-header-scientist-explore-electricity-magnetism-light-wave-forces-theoretical-practical-195625255.jpg" width="100%" height="40%"></img></div>
+  <a href="#o" style='color: white'><p style="background-color:black;color:white;padding:16px;margin-top:-10px;text-align:center;font-size:20px;font-family:verneda;"><i class='fa fa-arrow-down' style='color: white'></i> Start Your Journey Now <i class='fa fa-arrow-down' style='color: white'></i></p></a>
+</p>
+ <div class="dashboard" >
+        <div class="section flex flex-sb" >
+          <div class="section-left" >
+            
+            <div class="nfts">
+              <div class="trending heading flex flex-sb">
+              </div>
+              <div class="browse" ><!--
+                <div class="nft">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/2471/2471982.png"
+                    alt=""
+                  />
+                  <div class="title">Creating Dashboards</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="black-vp.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price"><a href="dashboard.html">Start Now</a></div>
+                  </div>
+                </div>
 
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="index.html" class="active1 w3-bar-item w3-button w3-padding-large"onclick="myFunction()">Home</a>
-        <a href="t1.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tests</a>
-        <a href="rpage1.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Results</a>
-        <a href="https://script.google.com/macros/s/AKfycbyMGE7q7b4hFvYrr9z0WVXOyxSmKspaWpNuvApvqZ4wfilFLotXrxNJglcw4NT7L91xtw/exec" target="_blank" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Sign In</a>
-      </div>
-    </div>
-  </header>
-      <section >
-         <div class="hero" id="about">
-           <div class="hero-description">
-             <div class="hero-text">
-              <h1 class="hero-title">Learn with Fun throughout your Life</h1>
-              <p>
-               This is the most precious time of your life. Enjoy it as much as you can. Keep studies with you as well but as the second priority, First should always be your parents and friends.
-               <br>Difficulties have no end and who knows tommorow will come or not.<br>Enjoy the present and be happy and see a tremendious effect on your studies as well. 
-              </p>
-              <span class="w3-text-white social" style="margin-top:050px">
-              
-      </section>
-      <main style="padding-bottom:40px ;">
-        <h2 class="hero-title">List of Services </h2>
-        <div class="games">
-          <div class="game-list">
-            <a href="https://script.google.com/macros/s/AKfycbyMGE7q7b4hFvYrr9z0WVXOyxSmKspaWpNuvApvqZ4wfilFLotXrxNJglcw4NT7L91xtw/exec" target="_blank"><img src="https://uploads.turbologo.com/uploads/icon/preview_image/2879100/draw_svg20200611-27481-1wo16o4.svg.png" alt="book" style="width:100px; height: 100px;"/ ></a>
-          <h3><a href="https://script.google.com/macros/s/AKfycbyMGE7q7b4hFvYrr9z0WVXOyxSmKspaWpNuvApvqZ4wfilFLotXrxNJglcw4NT7L91xtw/exec" target="_blank">Books</a></h3>
-          <p></p>
-          </div>
-          <div class="game-list">
-              <a href="t1.html" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5231/5231719.png" alt="mains test series" style="width:100px; height: 100px;"/></a>
-            <h3><a href="t1.html" target="_blank">Mains Test Series</a></h3>
-            <p></p>
-          </div>
-          <div class="game-list">
-              <a href="t2.html" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5231/5231719.png" alt="adv test series" style="width:100px; height: 100px;"/></a>
-            <h3><a href="t2.html" target="_blank">Advance Test Series</a></h3>
-            <p></p>
-          </div>
-          <div class="game-list">
-              <a href="josaa.html" target="_blank"><img src="https://play-lh.googleusercontent.com/Zd9YYIIvs61lvHrUhhvVGwPYNK8GMvdLhOLCBuqE1KMQtWDgj5t3Nj7s8OIqOziyiA=w240-h480-rw" alt="Josaa" style="width:100px; height: 100px;"/></a>  
-            <h3><a href="josaa.html" target="_blank">JoSAA Councelling</a></h3>
-             <p></p>
-          </div>
-          <div class="game-list">
-            <a href="https://form.jotform.com/220869073720457" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/189/189665.png" alt="doubt" style="width:100px; height: 100px;"/ ></a>
-          <h3><a href="https://form.jotform.com/220869073720457" target="_blank">Ask A Doubt</a></h3>
-          <p></p>
-          </div>
-          <div class="game-list">
-              <a href="news.html" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="halloween" style="width:100px; height: 100px;"/></a>
-            <h3><a href="news.html" target="_blank">Jee News and Updates</a></h3>
-            <p></p>
-          </div>
-        </div>
-        
-      </div>
-      <div>
-      <h2 class="hero-title">Reach out to us</h2>
-      <div class="contact" id="contact" style="padding-bottom: 10px !important;">
-      <div class="contact-list contact-address"  >
-        <h5><span><i class="fa fa-book w3-xlarge w3-text-light-grey"></i></span>Books</h5>
-        <p>Follow these books <br>
-        NCERT Books </br>
-        NCERT Exempler </br>
-        Previous Year Papers (PYQ) </br>
-        </p>
-      </div>
-      <div class="contact-list">
-        <h5><span><i class="fa fa-envelope w3-xlarge w3-text-light-grey"></i></span>Send an email</h5>
-        <div class="email-contact">
-          <input placeholder="vivoY75user@gmail.com"  type="email" disabled style="margin: 8px 0px;padding:2px; width:200px; !important;"/>
-        <a href="">Send email</a>
-        </div>
-  
-      </div>
-      <div class="contact-list" >
-        <h5><span><i class="fa fa-telegram w3-xlarge w3-text-light-grey"></i></span>Telegram</h5>
-        <p>Personal:<a href="https://t.me/vridhi_pages">Vridhi_Pages</a></p>
-        <p>Channel:<a href="https://t.me/jee_2023_test_series">Official Group</a></p>
+                <div class="nft">
+                  <img
+                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-2.jpg"
+                    alt=""
+                  />
+                  <div class="title">Spectrum of Color</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
+                        alt=""
+                      />
+                      <p>Hassnain Haider</p>
+                    </div>
+                    <div class="price">4 ETH</div>
+                  </div>
+                </div>
 
-      </div>
-               <p>   <c> Copyright@2022 | Vridhi Pages </c> </p>
-      </div>
-    </div>
-</main>
-      
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
-    
+                <div class="nft">
+                  <img
+                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-3.jpg"
+                    alt=""
+                  />
+                  <div class="title">Vivid Artwork</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
+                        alt=""
+                      />
+                      <p>Hassnain Haider</p>
+                    </div>
+                    <div class="price">3.5 ETH</div>
+                  </div>
+                </div>
+
+                <div class="nft">
+                  <img
+                    src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/nft-4.jpg"
+                    alt=""
+                  />
+                  <div class="title">Nature's Love</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="https://raw.githubusercontent.com/programmercloud/nft-dashboard/main/img/user.png"
+                        alt=""
+                      />
+                      <p>Hassnain Haider</p>
+                    </div>
+                    <div class="price">5 ETH</div>
+                  </div>
+                </div>-->
+              <div class="nft">
+                  <img
+                    src="https://cdn.dribbble.com/users/2139665/screenshots/6388149/oifbkcqo7j.gif"
+                    alt=""
+                  />
+                  <div class="title">Creating Navbars</div>
+                  <div class="details flex flex-sb">
+                    <div class="author flex">
+                      <img
+                        src="black-vp.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="price"><a href="navbar.html">Start Now</a></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+   </div></div>
+<div class="footer">
+            <div class="container">     
+                <div class="row">                       
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                        <div class="single_footer">
+                            <h4>What will you learn</h4>
+                            <ul>
+                                <li><a href="#">Creating Dashboards</a></li>
+                                <li><a href="#">Creating Sign In Pages</a></li>
+                                <li><a href="#">Creating Backends</a></li>
+                                <li><a href="#">Creating Google Apps Script</a></li>
+                                <li><a href="#">Using Firebase, MongoDB</a></li>
+                            </ul>
+                        </div>
+                    </div><!--- END COL --> 
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single_footer single_footer_address">
+                            <h4>Languages</h4>
+                            <ul>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">Javascript </a></li>
+                                <li><a href="#">Flex-Box</a></li>
+                                <li><a href="#">Bootstrap</a></li>
+                            </ul>
+                        </div>
+                    </div><!--- END COL -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single_footer single_footer_address">
+                            <h4>Send Us Email</h4>
+                            <div class="signup_form">                           
+                                <form action="mailto:vridhiquora@gmail.com" method="post" class="subscribe">
+                                    <input type="text" class="subscribe__input" value="vridhiquora@gmail.com" disabled>
+                                    <button type="submit" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="social_profile">
+                            <ul>
+                                <li><a class="whatsapp" href="https://wa.me/qr/BHKGHDBORE3VN1"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a class="telegram" href="https://t.me/vridhipages"><i class="fab fa-telegram"></i></a></li>
+                                <li><a class="twitter" href="https://twitter.com/VridhiPages"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="instagram" href="https://www.instagram.com/vridhipages/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="youtube" href="https://www.youtube.com/@vridhi-pages"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                        </div>                          
+                    </div><!--- END COL -->         
+                </div><!--- END ROW --> 
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <p class="copyright">Copyright © 2023 <b><a href="https://www.vridhi-pages.cf" style="color:cyan;">Vridhi-Pages</a></b> | Made with <i class="fa fa-heart pulse"style="color:red"></i> in <b> India</b></p>
+                    </div><!--- END COL -->                 
+                </div><!--- END ROW -->                 
+            </div><!--- END CONTAINER -->
+        </div>
 </body>
 </html>
